@@ -8,6 +8,7 @@ myMap.set(keyString, "value associated with 'a string'");
 myMap.set(keyObj, "value associated with keyObj");
 myMap.set(keyFunc, "value associated with keyFunc");
 
+console.log(myMap.entries());
 //getting values
 let size = myMap.size;
 let valStr = myMap.get(keyString);
@@ -26,6 +27,7 @@ for(let value of myMap.values())
 let first = new Map([[1, "one"], [2, "Two"], [3, "Three"]]);
 let second = new Map([[1, "uno"], [2, "dos"]]);
 let merged = new Map([...first, ...second, [1, "eins"]]);
+console.log(merged);
 
 let hasKey = merged.has(1);
 let delKey = merged.delete(1);
